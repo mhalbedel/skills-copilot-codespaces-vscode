@@ -1,5 +1,12 @@
-function skillsmember() {
-    var skills = document.getElementById("skills");
-    var member = document.getElementById("member");
-    var skillsmember = document.getElementById("skillsmemb");
+function skillsMember() {
+  return {
+    restrict: 'E',
+    templateUrl: 'views/skills-member.html',
+    controller: 'SkillsMemberCtrl',
+    controllerAs: 'skillsMemberCtrl',
+    bindToController: true,
+    scope: {
+      member: '='
+    }
+  };
 }
